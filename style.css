@@ -1,0 +1,105 @@
+nav {    
+    display: block;
+    text-align: center;
+    background-color: #b4a7d6ff;
+    border: 1px solid #351c75;
+    border-radius: 1rem;
+  }
+  nav ul {
+    margin: 0;
+    padding:0;
+    list-style: none;
+  }
+  .nav li {
+    display:block; 
+    color:#fff; 
+    padding: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+  }
+  .nav{  
+    vertical-align: top; 
+    display: inline-block;
+  }
+  .nav li{position: relative;}
+  .nav > li { 
+    float:left; 
+  } 
+  .nav > li > a { 
+    margin-bottom:1px;
+    text-decoration: none;
+    color: white;
+  }
+  .nav > li:hover , .nav > li:hover >a{  border-bottom-color:orange;}
+  .nav li:hover > a { color:orange; }
+  .nav > li:first-child>a{border-radius: 4px 0 0 0;}
+  .nav > li:last-child  { 
+    border-radius: 0 0 4px 0; 
+    margin-right: 0;
+  } 
+  .nav > li:last-child >a{border-radius: 0 4px 0 0; }
+  .nav li li a { 
+      margin-top:1px;
+      text-decoration: none;
+      color: white;
+    }
+  
+  
+  
+    .nav li a:first-child:nth-last-child(2):before { 
+     content:""; 
+     position: absolute; 
+     height:0; 
+     width: 0; 
+     border: 5px solid transparent; 
+     top: 50% ;
+     right:5px;  
+   }
+   
+   
+   
+   
+   
+   /* submenu positioning*/
+.nav ul {
+  position: relative;
+  white-space: nowrap;
+  z-index: 1;
+  left: -99999em;
+  background-color: #b4a7d6ff;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-left: 1px solid #351c75;
+  border-right: 1px solid #351c75;
+  border-bottom: 1px solid #351c75;
+}
+.nav > li:hover > ul {
+  left: auto;
+  padding-top: 5px  ;
+  min-width: 100%;
+}
+.nav > li li ul {  border-left:1px solid #fff;}
+
+
+.nav > li li:hover > ul { 
+ /* margin-left: 1px */
+  left: 100%;
+  top: -1px;
+}
+/* arrow hover styling */
+.nav > li > a:first-child:nth-last-child(2):before { 
+  border-top-color: #76a5afff; 
+}
+.nav > li:hover > a:first-child:nth-last-child(2):before {
+  border-bottom-color: #76a5afff; 
+  margin-top:-5px
+}
+.nav li li > a:first-child:nth-last-child(2):before {  
+  border-left-color: #76a5afff; 
+  margin-top: -5px
+}
+.nav li li:hover > a:first-child:nth-last-child(2):before {
+  border-right-color: #76a5afff;
+  right: 10px; 
+}
