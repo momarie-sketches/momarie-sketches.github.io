@@ -76,37 +76,36 @@ body {
 }
 .page__3Danimations {
   display: flex;
-  align-content: baseline;
   flex-wrap: wrap;
-  margin: 3rem 0rem 0rem;
   text-align: center;
 }
 .page__3Danimations img {
-  padding: 0.5rem;
-  max-width: 90%;
+  max-width: 100%;
 }
 .page__3Danimations p {
   background-color: #76a5afff;
   color: white;
   padding: 1rem;
-  margin: 0.5rem 1rem;
   font-size: 1.5rem;
 }
 .walkcycle {
   flex: 1;
+  margin: 2rem;
 }
 .thumbwar {
   flex: 1;
+  margin: 2rem;
 }
 .page__2Danimations {
   display: flex;
   flex-wrap: wrap;
-  margin: 3rem 0rem 0rem;
   justify-content: center;
 }
 .page__2Danimations img {
   margin: 1rem;
-  max-width: 29%;
+  max-width: 25%;
+  flex: 1;
+  min-width: 11rem;
 }
 .page__seemore {
   background-color: #76a5afff;
