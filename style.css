@@ -126,12 +126,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  justify-content: center;
+  align-items: center;
 }
 .aboutme img {
   min-width: 10rem;
-  max-width: 42%;
-  margin-bottom: 1rem;
+  max-width: 30%;
+  margin: 3rem;
 }
 .aboutme p {
   background-color: #76a5afff;
@@ -139,6 +139,7 @@ body {
   padding: 2rem;
   margin: 0.5rem 1rem;
   font-size: 2rem;
+  flex: 1;
 }
 .contact {
   display: flex;
