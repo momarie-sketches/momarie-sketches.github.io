@@ -73,6 +73,8 @@ iframe {
   color: white;
   padding: 1rem;
   font-size: 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 2rem;
 }
 .walkcycle {
   width: 22rem;
@@ -221,4 +223,6 @@ h1 {
   margin: 2rem 3rem 3rem;
   padding: 1rem 2rem;
   font-size: 1.7rem;
+  border: 1px solid transparent;
+  border-radius: 2rem;
 }
