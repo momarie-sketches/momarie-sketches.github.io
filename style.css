@@ -75,6 +75,7 @@ iframe {
   font-size: 1.5rem;
   border: 1px solid transparent;
   border-radius: 1rem;
+  font-family: 'Oswald', sans-serif;
 }
 .walkcycle {
   width: 22rem;
@@ -225,4 +226,5 @@ h1 {
   font-size: 1.7rem;
   border: 1px solid transparent;
   border-radius: 1rem;
+  font-family: 'Oswald', sans-serif;
 }
