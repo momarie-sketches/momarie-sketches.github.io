@@ -7,27 +7,11 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
-  font-family: 'Pinyon Script';
+  font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Pinyon Script'), local('PinyonScript'), url(https://fonts.gstatic.com/s/pinyonscript/v10/6xKpdSJbL9-e9LuoeQiDRQR8WOXaOqTimDc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Lora--normal';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v15/0QIvMX1D_JOuMwr7I_FMl_E.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Lora--bold';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v15/0QIvMX1D_JOuMwr7I_FMl_E.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/oswald/v31/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYySUhiCXAA.woff) format('woff');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 body {
@@ -40,7 +24,7 @@ body {
   border-radius: 1rem;
 }
 .header__name {
-  font-family: 'Pinyon Script', cursive;
+  font-family: 'Oswald', sans-serif;
   font-size: 4.5rem;
   margin: 2rem;
 }
@@ -69,18 +53,20 @@ body {
   flex-wrap: wrap;
   margin: 3rem 0rem 0rem;
   justify-content: center;
+  align-items: center;
 }
-.homepage__3Danimations img {
-  padding: 0.5rem;
-  max-width: 47%;
+iframe {
+  flex: 1;
+  height: 13rem;
+  width: 100%;
+  margin: 1rem;
 }
 .page__3Danimations {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-}
-.page__3Danimations img {
-  max-width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .page__3Danimations p {
   background-color: #76a5afff;
@@ -89,19 +75,28 @@ body {
   font-size: 1.5rem;
 }
 .walkcycle {
+  width: 22rem;
   flex: 1;
-  margin: 2rem;
+  margin: 0rem 2rem;
+}
+.walkcycle iframe {
+  margin: 0rem;
 }
 .thumbwar {
+  width: 22rem;
   flex: 1;
-  margin: 2rem;
+  margin: 0rem 2rem;
+}
+.thumbwar iframe{
+  margin: 0rem;
 }
 .page__2Danimations {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
-.page__2Danimations img {
+.page__2Danimations embed {
   margin: 1rem;
   max-width: 25%;
   flex: 1;
@@ -109,17 +104,22 @@ body {
 }
 .page__seemore {
   background-color: #76a5afff;
-  margin: 1rem 2rem;
+  margin: 1rem 20%;
   padding: 0.2rem 0rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+
 }
-.page__seemore a {
+.page__artwork a {
   color: white;
   text-decoration: none;
-  font-family: 'Lora--normal', serif;
+  font-family: 'Amatic SC', cursive;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-size: 2rem;
+  text-align: center;
 }
 .aboutme {
   display: flex;
@@ -145,26 +145,22 @@ body {
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  background-color: #76a5afff;
 }
 .contact img {
-  min-width: 7rem;
+  max-width: 7rem;
   margin: 2rem 2rem 3rem;
 }
 .contact p {
-  color: white;
+  color: black;
   padding: 2rem;
   margin: 0.5rem 1rem;
   font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
 }
 .page__title {
-  background-color: #f3f3f3ff;
-  border: 1rem solid #76a5afff;
-  border-right: 3rem solid #76a5afff;
-  border-left: 3rem solid #76a5afff;
   margin: 1rem 5rem 2rem;
   padding: 1rem 1rem;
-  font-family: 'Lora--bold', serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 2.5rem;}
 nav {
   text-align: center;
@@ -207,9 +203,10 @@ h1 {
   text-align: center;
   top: 0;
   background: rgba(0,0,0,0.7);
+  text-decoration: none;
 }
 .popup img {
-  max-width: 90%;
+  max-width: 70%;
   max-height: 76%;
   margin-top: 3rem;
 }
