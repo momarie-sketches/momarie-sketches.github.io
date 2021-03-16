@@ -16,6 +16,7 @@
 }
 body {
   background-color: #e1d2c1ff;
+  padding: 0;
 }
 .page__artwork {
   background-color: #fff5e3ff;
@@ -49,17 +50,23 @@ body {
   max-width: 100%;
 }
 .homepage__3Danimations {
-  display: flex;
+  /*display: flex;
   flex-wrap: wrap;
   margin: 3rem 0rem 0rem;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
+  font-size: 0;
+  text-align: center;
 }
 iframe {
-  flex: 1;
+  /*flex: 1;
   height: 13rem;
   width: 100%;
-  margin: 1rem;
+  margin: 1rem;*/
+  height: 379px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 23px;
 }
 .page__3Danimations {
   display: flex;
